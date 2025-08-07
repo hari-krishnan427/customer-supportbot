@@ -9,7 +9,7 @@ async function sendMessage() {
   input.value = "";
   input.disabled = true;
 
-  const response = await fetch("http://localhost:11434/api/generate", {
+  const response = await fetch("http://customer-supportbot-production.up.railway.app/api/generate", {
 ";, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
