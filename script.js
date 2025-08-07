@@ -9,7 +9,8 @@ async function sendMessage() {
   input.value = "";
   input.disabled = true;
 
-  const response = await fetch("https://your-railway-url/api/generate";, {
+  const response = await fetch("http://localhost:11434/api/generate", {
+";, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
