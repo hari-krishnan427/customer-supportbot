@@ -1,6 +1,12 @@
-# 🤖 Flipkart AI Customer Support Bot
+# 🤖 Flipkart AI Customer Support Assistant
 
-A full-stack AI-powered Customer Support Assistant built with **Flask**, **HTML5/CSS3/JavaScript**, and **Ollama LLM** integration. Designed for automated e-commerce query resolution, order tracking support, and instant customer service response.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://hari-krishnan427.github.io/customer-supportbot/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML5/CSS3](https://img.shields.io/badge/UI-HTML5%20%2F%20CSS3-blue?style=for-the-badge&logo=html5)](https://w3.org)
+
+An interactive e-commerce **Customer Support Assistant** designed for automated query resolution, order tracking, returns, refunds, and e-commerce helpdesk support.
+
+🔗 **Live Web Application:** [https://hari-krishnan427.github.io/customer-supportbot/](https://hari-krishnan427.github.io/customer-supportbot/)
 
 ---
 
@@ -16,7 +22,7 @@ customer-supportbot/
 ├── frontend/                       # Web Chatbot Interface
 │   ├── index.html                  # Responsive chat interface layout
 │   ├── style.css                   # Glassmorphism design system & CSS styling
-│   ├── script.js                   # Asynchronous API fetch handler
+│   ├── script.js                   # Asynchronous API fetch & fallback handler
 │   └── flipkart_100_queries.jsonl  # Dataset fallback
 ├── .gitignore
 └── README.md
@@ -24,47 +30,22 @@ customer-supportbot/
 
 ---
 
-## 🛠️ Prerequisites & Setup
+## 🛠️ Key Features
 
-### 1. Python Environment Setup
-Ensure Python 3.10+ is installed:
-```bash
-python --version
-```
-
-### 2. Install Dependencies
-Navigate to the backend directory and install required Python packages:
-```bash
-cd backend
-pip install -r requirements.txt
-```
+- ⚡ **Instant Query Resolution**: Real-time response matching for 100+ common Flipkart support scenarios (orders, delivery delays, cancellations, refunds, gift cards, payments).
+- 🎨 **Modern Glassmorphism UI**: High-converting, responsive chat interface with smooth scrolling and animations.
+- 🌐 **Zero-Dependency Cloud Hosting**: Hosted live via GitHub Pages for instant browser access on mobile & desktop.
 
 ---
 
-## 🚀 Running the Project
+## 🚀 Setup & Execution
 
-### Backend (Python Flask Server)
-Start the backend server on `http://localhost:5000`:
+### 1. Web Application (Live)
+Simply visit [https://hari-krishnan427.github.io/customer-supportbot/](https://hari-krishnan427.github.io/customer-supportbot/) directly in your browser.
+
+### 2. Local Development
 ```bash
-cd backend
-python app.py
+git clone https://github.com/hari-krishnan427/customer-supportbot.git
+cd customer-supportbot
 ```
-- Health Check Endpoint: `http://localhost:5000/api/health`
-- Chat API Endpoint: `POST http://localhost:5000/api/chat`
-
-### Frontend (Interactive UI)
-Open `frontend/index.html` directly in any web browser, or serve it using a simple local server:
-```bash
-cd frontend
-python -m http.server 8000
-```
-Then visit `http://localhost:8000` in your browser.
-
----
-
-## ⚙️ Features & Architecture
-
-- **Intelligent Response Engine**: Instant matching against 100+ common Flipkart customer support scenarios.
-- **Ollama LLM Fallback**: Direct integration with local Ollama models (`flipkart-bot` / `llama3`).
-- **RESTful API Architecture**: Decoupled Flask backend with CORS enabled for web frontends.
-- **Modern Glassmorphism UI**: High-converting, responsive chat widget with smooth scrolling and animations.
+Open `index.html` directly in any web browser!
